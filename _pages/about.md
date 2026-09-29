@@ -1,56 +1,132 @@
 ---
 permalink: /
-title: "Academic Pages is a ready-to-fork GitHub Pages template for academic personal websites"
+title: ""
+excerpt: "About me"
 author_profile: true
 redirect_from: 
   - /about/
   - /about.html
 ---
 
-This is the front page of a website that is powered by the [Academic Pages template](https://github.com/academicpages/academicpages.github.io) and hosted on GitHub pages. [GitHub pages](https://pages.github.com) is a free service in which websites are built and hosted from code and data stored in a GitHub repository, automatically updating when a new commit is made to the repository. This template was forked from the [Minimal Mistakes Jekyll Theme](https://mmistakes.github.io/minimal-mistakes/) created by Michael Rose, and then extended to support the kinds of content that academics have: publications, talks, teaching, a portfolio, blog posts, and a dynamically-generated CV. Incidentally, these same features make it a great template for anyone that needs to show off a professional template!
+我是华东师范大学**大数据技术与工程**专业硕士研究生，研究方向为**大语言模型后训练**（LLM post-training）与**LLM Agent**。我的工作关注一件事：让训练信号变得可控且可验证——从合成数据、SFT，到多轮 GRPO，再到用确定性环境构造不可作弊的 reward。
 
- You can fork [this template](https://github.com/academicpages/academicpages.github.io) right now, modify the configuration and Markdown files, add your own PDFs and other content, and have your own site for free, with no ads!
+I am a M.Sc. student in Big Data Technology and Engineering at [East China Normal University](https://www.ecnu.edu.cn/). My research focuses on LLM post-training and LLM agents. Contact me at [1127232045@qq.com](mailto:1127232045@qq.com).
 
-A data-driven personal website
-======
-Like many other Jekyll-based GitHub Pages templates, Academic Pages makes you separate the website's content from its form. The content & metadata of your website are in structured Markdown files, while various other files constitute the theme, specifying how to transform that content & metadata into HTML pages. You keep these various Markdown (.md), YAML (.yml), HTML, and CSS files in a public GitHub repository. Each time you commit and push an update to the repository, the [GitHub pages](https://pages.github.com/) service creates static HTML pages based on these files, which are hosted on GitHub's servers free of charge.
+---
 
-Many of the features of dynamic content management systems (like Wordpress) can be achieved in this fashion, using a fraction of the computational resources and with far less vulnerability to hacking and DDoSing. You can also modify the theme to your heart's content without touching the content of your site. If you get to a point where you've broken something in Jekyll/HTML/CSS beyond repair, your Markdown files describing your talks, publications, etc. are safe. You can rollback the changes or even delete the repository and start over - just be sure to save the Markdown files! You can also write scripts that process the structured data on the site, such as [this one](https://github.com/academicpages/academicpages.github.io/blob/master/talkmap.ipynb) that analyzes metadata in pages about talks to display [a map of every location you've given a talk](https://academicpages.github.io/talkmap.html).
+## 🔬 Research Interests
 
-For those users that need more advanced functionality, the template also supports the following popular tools:
-- [MathJax](https://www.mathjax.org/) for mathematical equations
-- [Mermaid](https://mermaid.js.org/) for diagraming
-- [Plotly](https://plotly.com/javascript/) for plotting
+- **LLM Post-training｜大模型后训练** — SFT、GRPO、Reward 设计、Agentic 训练
+- **LLM Agents｜智能体** — 多轮工具调用、长程决策、评测与运行时
+- **Educational AI｜教育智能** — 解题辅导与可验证交互环境生成
 
-Getting started
-======
-1. Register a GitHub account if you don't have one and confirm your e-mail (required!)
-1. Fork [this template](https://github.com/academicpages/academicpages.github.io) by clicking the "Use this template" button in the top right. 
-1. Go to the repository's settings (rightmost item in the tabs that start with "Code", should be below "Unwatch"). Rename the repository "[your GitHub username].github.io", which will also be your website's URL.
-1. Set site-wide configuration and create content & metadata (see below -- also see [this set of diffs](https://archive.is/3TPas) showing what files were changed to set up [an example site](https://getorg-testacct.github.io) for a user with the username "getorg-testacct")
-1. Upload any files (like PDFs, .zip files, etc.) to the files/ directory. They will appear at https://[your GitHub username].github.io/files/example.pdf.  
-1. Check status by going to the repository settings, in the "GitHub pages" section
+---
 
-Site-wide configuration
-------
-The main configuration file for the site is in the base directory in [_config.yml](https://github.com/academicpages/academicpages.github.io/blob/master/_config.yml), which defines the content in the sidebars and other site-wide features. You will need to replace the default variables with ones about yourself and your site's github repository. The configuration file for the top menu is in [_data/navigation.yml](https://github.com/academicpages/academicpages.github.io/blob/master/_data/navigation.yml). For example, if you don't have a portfolio or blog posts, you can remove those items from that navigation.yml file to remove them from the header. 
+## 🔥 News
 
-Create content & metadata
-------
-For site content, there is one Markdown file for each type of content, which are stored in directories like _publications, _talks, _posts, _teaching, or _pages. For example, each talk is a Markdown file in the [_talks directory](https://github.com/academicpages/academicpages.github.io/tree/master/_talks). At the top of each Markdown file is structured data in YAML about the talk, which the theme will parse to do lots of cool stuff. The same structured data about a talk is used to generate the list of talks on the [Talks page](https://academicpages.github.io/talks), each [individual page](https://academicpages.github.io/talks/2012-03-01-talk-1) for specific talks, the talks section for the [CV page](https://academicpages.github.io/cv), and the [map of places you've given a talk](https://academicpages.github.io/talkmap.html) (if you run this [python file](https://github.com/academicpages/academicpages.github.io/blob/master/talkmap.py) or [Jupyter notebook](https://github.com/academicpages/academicpages.github.io/blob/master/talkmap.ipynb), which creates the HTML for the map based on the contents of the _talks directory).
+- **\[2026.09\]** 启动教育 Agent 方向科研工作（3D 场景生成 × 语言教育），目标 **BEA 2027**
+- **\[2026.09\]** 开始 LLM Agent 的运行时（runtime）与评测相关工作
+- **\[2026.0X\]** 入职某教育科技公司，任大模型算法实习生，负责数学解题方向后训练
+- **\[2026.0X\]** 完成 AgenticRAG 端到端流程（数据合成 → SFT → 多轮 GRPO）
 
-**Markdown generator**
+<!-- ⚠️ 上面两条 2026.0X 记得换成真实月份。
+     注意日期两侧的方括号要写成 \[ \]（带反斜杠）。因为 markdown 里 [文字] 会被当成引用式链接，
+     不转义的话 Jekyll 构建时会产生 "No link definition for link ID" 警告。显示效果一样，但日志会脏。 -->
 
-The repository includes [a set of Jupyter notebooks](https://github.com/academicpages/academicpages.github.io/tree/master/markdown_generator
-) that converts a CSV containing structured data about talks or presentations into individual Markdown files that will be properly formatted for the Academic Pages template. The sample CSVs in that directory are the ones I used to create my own personal website at stuartgeiger.com. My usual workflow is that I keep a spreadsheet of my publications and talks, then run the code in these notebooks to generate the Markdown files, then commit and push them to the GitHub repository.
+---
 
-How to edit your site's GitHub repository
-------
-Many people use a git client to create files on their local computer and then push them to GitHub's servers. If you are not familiar with git, you can directly edit these configuration and Markdown files directly in the github.com interface. Navigate to a file (like [this one](https://github.com/academicpages/academicpages.github.io/blob/master/_talks/2012-03-01-talk-1.md) and click the pencil icon in the top right of the content preview (to the right of the "Raw | Blame | History" buttons). You can delete a file by clicking the trashcan icon to the right of the pencil icon. You can also create new files or upload files by navigating to a directory and clicking the "Create new file" or "Upload files" buttons. 
+## 🚀 Projects
 
-Example: editing a Markdown file for a talk
-![Editing a Markdown file for a talk](/images/editing-talk.png)
+### 教育大模型后训练：数学解题卡点识别与精准提示
 
-For more info
-------
-More info about configuring Academic Pages can be found in [the guide](https://academicpages.github.io/markdown/), the [growing wiki](https://github.com/academicpages/academicpages.github.io/wiki), and you can always [ask a question on GitHub](https://github.com/academicpages/academicpages.github.io/discussions). The [guides for the Minimal Mistakes theme](https://mmistakes.github.io/minimal-mistakes/docs/configuration/) (which this theme was forked from) might also be helpful.
+`LLM Post-training` · `SFT` · `Synthetic Data` · `Evaluation`
+
+给定「题目 + 正确解法 + 学生半成品过程」，输出卡点分析与下一步提示（不泄露答案）。
+
+- **任务定义**：把辅导拆成「错因诊断」与「下一步引导」两个可评测子任务，建立可判定的任务契约
+- **数据合成**：弱模型自然采样 vs 注入构造的对照实验；多弱模型构成学生池防止 teacher 过拟合，训练池与评测池分离
+- **训练**：Qwen 7B + LoRA SFT（LLaMA-Factory）
+- **评测设计**：迁移测试（教完 A 题后紧随相似变式 A′，区分「真教会」与「喂答案」）；math-verify 做符号等价判分，lm-evaluation-harness 编排
+- **状态**：in progress
+
+### AgenticRAG：金融多跳问答
+
+`LangGraph` · `Multi-turn RL` · `verl` · `Retrieval`
+
+金融半年报多跳 QA 的端到端 Agentic RAG 流程。
+
+- **检索层**：FAISS + BGE-M3 密集检索 / BM25 + jieba 稀疏检索 / NetworkX 知识图谱，RRF 融合 + Cross-Encoder 重排
+- **编排层**：LangGraph PEV 循环（planner → executor → verifier → synthesizer，含 replan）
+- **训练**：Qwen3-4B + LoRA SFT；verl 多轮 tool-agent GRPO（max 7 assistant turns, n=4），加权奖励 = hop precision/recall + 三维 LLM Judge + 格式与检索充分性
+- **评测**：EM / F1 / hop_recall + hop-aware 消融 + 三维 Judge
+- **状态**：in progress
+
+### 购物 Agentic RL：长程多轮决策
+
+`veRL` · `GRPO` · `Long-horizon`
+
+基于公开基线 [YYHDBL/shopping-grpo-longhorizon](https://github.com/YYHDBL/shopping-grpo-longhorizon) 的迭代版本，我的增量是细化信用分配与奖励设计。
+
+- **技术栈**：veRL 0.8.0 + Qwen3.5-2B + GRPO，规则化成功率奖励，ShopSimulator v2.1 环境
+- **基线结果（Final-200）**：Base 0% → LoRA SFT 60.5% → GRPO 62.0%
+- **我的结果**：in progress
+
+### 教育 Agent：3D 场景生成 × 语言教育
+
+`Agentic Generation` · `Symbolic Verification` · `Reward Design`
+
+用 LLM 生成 JSON 场景图，配合符号化资产库与确定性 oracle，把「场景能否逼出目标语言结构」变成可判定的生成约束。
+
+- **三层架构**：场景图（JSON，字段可编辑）/ 资产库（封闭目录，LLM 只能引用不能发明）/ oracle（几何规则判定正确性，不依赖模型自评）
+- **核心动机**：one-shot 生成无法满足教学约束，因此 agentic 的「提议 → 校验 → 修订」循环是被约束逼出来的，而非装饰
+- **与 RL 的衔接**：确定性 oracle 天然构成不可 hack 的 reward，可作为 RLVR 环境
+- **状态**：in progress（论文 target BEA 2027）
+
+---
+
+## 📝 Publications
+
+**Working Paper** — *3D 场景生成 × 语言教育* (targeting **BEA 2027**)
+
+探索将二语习得中的 task-essentialness 形式化为可判定的生成约束，用于自动生成任务必需的交互式教学场景。
+
+---
+
+## 💼 Experience
+
+**大模型算法实习生** — 某教育科技公司 ｜ 2026.0X – 至今
+
+- 负责数学解题方向的后训练数据与训练流程，定义「卡点识别 + 下一步提示」任务契约
+- 设计错误类型分类体系（`correct_stuck` / `wrong_direction` / `calc_error`）及对应合成方案，并用对照实验比较弱模型自然采样与注入构造两条路线
+- 构建多弱模型学生池与迁移测试评测协议，验证模型是「真教会」而非「喂答案」
+- 技术栈：Qwen 7B · LoRA SFT · LLaMA-Factory · math-verify · lm-evaluation-harness
+
+---
+
+## 🎓 Education
+
+**华东师范大学 East China Normal University** ｜ 2026 – 至今
+M.Sc. in Big Data Technology and Engineering｜大数据技术与工程 · 硕士
+
+<!-- ⚠️ 本科院校和起止年份我不知道，你自己补一行：
+**XX 大学** ｜ 20XX – 20XX
+B.Eng./B.Sc. in XX
+-->
+
+---
+
+## 🛠️ Technical Skills
+
+- **训练与后训练**：PyTorch · veRL / verl · LLaMA-Factory · LoRA / SFT · GRPO（multi-turn、tool-agent）
+- **推理与部署**：vLLM · HuggingFace Transformers · FastAPI
+- **Agent 与检索**：LangGraph · FAISS · BGE-M3 · BM25 · RRF + Cross-Encoder 重排 · NetworkX
+- **评测**：lm-evaluation-harness · OpenCompass · math-verify · LLM-as-a-Judge · 消融实验设计
+- **数据与基础设施**：Spark · SQL · Docker · Linux · Git
+
+---
+
+## 📧 Contact
+
+- **Email**：[1127232045@qq.com](mailto:1127232045@qq.com)
+- **GitHub**：[github.com/Summery36](https://github.com/Summery36)
+- **小红书**：每日学习打卡与面经
